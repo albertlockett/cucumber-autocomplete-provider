@@ -1,0 +1,43 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "plugins": [
+    "async-await"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": false
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "jquery": true,
+    "mocha": true
+  },
+  "rules": {
+    "async-await/space-after-async": 2,
+    "async-await/space-after-await": 2,
+    "generator-star-spacing": [1, {"before": true, "after": false}],
+    "max-len": [1, 80, {"ignorePattern": "The source code for this program is not published or otherwise divested of its trade secrets"}],
+    "quotes": 0,
+    "no-console": 1,
+    "no-debugger": 1,
+    "no-var": 1,
+    "semi": [1, "always"],
+    "no-trailing-spaces": 0,
+    "eol-last": 0,
+    "no-unused-vars": 1,
+    "no-underscore-dangle": 0,
+    "no-alert": 0,
+    "no-lone-blocks": 0,
+    "jsx-quotes": 1
+  }
+}
